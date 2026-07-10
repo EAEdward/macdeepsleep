@@ -179,7 +179,7 @@ show_menu() {
     fi
     printf "  0) 退出\n"
     printf "\n  请输入数字: "
-    read -r choice
+    read -r choice < /dev/tty || true
     printf "\n"
 
     case "$choice" in
@@ -196,11 +196,7 @@ case "${1:-}" in
     --uninstall|uninstall)
         do_uninstall ;;
     "")
-        if [[ ! -t 0 ]]; then
-            do_install
-        else
-            show_menu
-        fi ;;
+        show_menu ;;
     *)
         echo "用法: sudo bash $0 [install|update|--uninstall]"
         echo "  无参数：交互式菜单"
