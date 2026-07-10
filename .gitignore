@@ -1,0 +1,6 @@
+.codegraph
+.omo
+.opencode/node_modules
+.opencode/package-lock.json
+macdeepsleep
+release_notes.md
