@@ -133,9 +133,9 @@ do_install() {
     ok "LaunchDaemon 已加载"
 
     if [[ "$is_update" = "1" ]]; then
-        printf "\n\033[32m✓ 更新完成 (v2.1.0).\033[0m\n"
+        printf "\n\033[32m✓ 更新完成 (v1.0.0).\033[0m\n"
     else
-        printf "\n\033[32m✓ 安装完成 (v2.1.0).\033[0m  合盖试试效果。\n"
+        printf "\n\033[32m✓ 安装完成 (v1.0.0).\033[0m  合盖试试效果。\n"
     fi
     printf "  日志: log show --predicate 'process == \"macdeepsleep\"' --last 1h\n"
 }
@@ -168,7 +168,7 @@ show_menu() {
     local has_curr_flag=0
     [[ -f "$BIN_DEST" ]] && has_curr_flag=1
 
-    printf "\n  \033[36m━━━ macdeepsleep v2.1.0 ━━━\033[0m\n\n"
+    printf "\n  \033[36m━━━ macdeepsleep v1.0.0 ━━━\033[0m\n\n"
 
     if [[ "$has_curr_flag" = "1" ]]; then
         printf "  当前版本已安装\n\n"

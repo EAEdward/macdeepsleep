@@ -12,7 +12,7 @@
 extern int IOBluetoothPreferenceGetControllerPowerState(void);
 extern void IOBluetoothPreferenceSetControllerPowerState(int state);
 
-#define VERSION "2.1.0"
+#define VERSION "1.0.0"
 #define STATE_FILE "/var/tmp/macdeepsleep.state"
 
 static io_connect_t g_root_port;
